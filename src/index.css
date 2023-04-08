@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+background-color: rgba(128, 128, 128, 0.451);
+}
+
+.intro-page {
+  background-color: beige;
+  height: 100vh;
+}
+.header {
+  height: 220px;
+  background-color: rgba(140, 213, 140, 0.822);
+}
+.introPage-main {
+  width: 70%;
+  background-color: white;
+  right: 20%;
+  position: absolute;
+  transform: translateY(-100px);
+  height: 83%;
+  z-index: 1;
+  box-shadow: 0 0 12px 0px;
+  padding: 4rem;
+  right: 15%;
+  left: 15%;
+  display: flex;
+}
+.introPage-info {
+  width: 60%;
+}
+.introPage-info h2 {
+  font-size: 28px;
+  font-weight: 200;
+  font-family: inherit;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  color: #41525d;
+}
+.introPage-info ol {
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.introPage-info ol li {
+  font-size: 20px;
+  font-weight: 200;
+  opacity: 0.8;
+  margin: 1.5rem 0;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  color: #3b4a54;
+}
+.qrimg {
+  width: 300px;
+  height: 300px;
+}
+.qrDiv {
+  position: relative;
+}
+.loginBox {
+  top: 30%;
+  position: absolute;
+  left: 0;
+}
+.chat-background {
+  background-color: rgb(120, 218, 120);
+  height: 125px;
+  width: 100vw;
+}
+.chat-box {
+  width: 95%;
+  height: 95vh;
+  position: absolute;
+  background-color: #dbdbd2;
+  top: 1rem;
+  left: 2rem;
+  right: 2rem;
+  overflow: hidden;
+  z-index: 1000;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.696);
+  display: flex;
+}
+.chat-left {
+  background-color: white;
+  width: 420px;
+  height: 100%;
+  min-width: 350px;
+}
+.chatboxHeader {
+  height: 60px;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.chatboxHeader img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.chatboxHeader h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: rgb(83 73 73);
+}
+.back-arrow {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.myChat-logo {
+  margin-right: 1.5rem;
+}
+.searchBar {
+  width: 95%;
+  margin: 1rem 0;
+  margin-left: 3%;
+  position: relative;
+}
+.searchBar input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #80808026;
+  font-weight: 600;
+  font-family: inherit;
+  opacity: 0.8;
+  color: black;
+}
+.searchBar div {
+  position: absolute;
+  top: 0.4rem;
+  left: 1rem;
+}
+.mychat {
+  height: 77vh;
+  background-color: beige;
+}
+.profile-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  min-width: 350px;
+  width: 350px;
+  background-color: white;
+  z-index: 200;
+}
+/* .show-profile {
+  transition: left 0.3s ease-in-out;
+  left: 0;
+} */
+.profile-page h1 {
+  height: 60px;
+  background-color: beige;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.profileImage {
+  height: 260px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+.profileImage img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.profileName {
+  height: 120px;
+  background-color: beige !important;
+  padding: 1rem;
+}
+.profileName h3 {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: inherit;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+.profileName h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 11px;
+}
+.profileName p {
+  font-size: 13px;
+  font-weight: 300;
+  font-family: inherit;
+  color: gray;
+}
+.profileAbout {
+  margin-top: 2rem;
+  background-color: beige;
+  padding: 1rem;
+}
+.profileAbout h3 {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: inherit;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+.profileAbout h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: black;
+  margin-bottom: 7px;
+}
+.profileHelp {
+  font-size: 16px;
+  opacity: 0.9;
+  padding: 1rem;
+  text-align: center;
+  background-color: beige;
+  margin-top: 1.5rem;
+}
+
+.emptyChat {
+  background-color: rgba(255, 254, 254, 0.738);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.emptyChat img {
+  width: 450px;
+}
+.person {
+  display: flex;
+  padding: 15px 18px;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.person img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.person h3 {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.personal-chat {
+  width: 100%;
+  height: 100%;
+  /* background-color: darkslategrey; */
+}
+.personalChat-header {
+  background-color: rgba(245, 245, 220, 0.904);
+  padding: 15.2px 20px;
+  display: flex;
+  width: 100%;
+}
+.personalChat-header img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.personal-info h2 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.personal-info p {
+  font-size: 10px;
+}
+.personalChat-header span {
+  position: absolute;
+  right: 2rem;
+}
+.personalChat-header span i {
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+.personal-Chat-box {
+  background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-size: 50%;
+  height: 80vh;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.personal-box-footer {
+  padding: 8px 1rem;
+}
+.personal-box-footer i {
+  padding: 5px 10px;
+  color: black;
+  margin-left: 1rem;
+}
+.personal-box-footer i:last-child {
+
+  margin-left: 2rem;
+}
+
+.personal-box-footer i:hover {
+  background-color: #41525d;
+}
+.personal-box-footer input {
+  width: 80%;
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  outline: none;
+  border: 0;
+  margin: 0 ;
+}
+
+.chatbox-message {
+  max-width: 60%;
+  padding:  10px;
+  word-break: break-word;
+  width: fit-content;
+  border-radius: 7px;
+  margin: 5px 8px;
+  position: relative;
+}
+.text-messager {
+  font-size: 16px;
+  margin-right: 1rem;
+}
+.message-time {
+  font-size: 10px;
+  color: gray;
+  word-break: keep-all;
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: -5px;
+  display: grid;
+  justify-items: end;
+}
+.senderMessage {
+  background-color: #b4e98a;
+  color: white;
+  margin-left: auto;
+}
+
+.reciverMessage {
+  background-color: white;
+  color: black;
+  margin-right: auto;
+}
