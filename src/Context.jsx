@@ -16,7 +16,7 @@ const AccountProvider = ({ children }) => {
 
   useEffect(() => {
     // socket.current = io("ws://localhost:9000");
-    socket.current = io("https://whatsapp-clonesocket.adaptable.app");
+    socket.current = io("https://whatsapp-clone-socket.adaptable.app");
   }, [account]);
 
   return (
