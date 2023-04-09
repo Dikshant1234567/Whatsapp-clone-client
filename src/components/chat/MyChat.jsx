@@ -50,15 +50,15 @@ function MyChat({ text }) {
   return (
     <div className="mychat">
       {Myuser.map(
-        (value) =>
+        (value, index) =>
           value.sub !== account.sub && (
-            <>
-              <div className="person" onClick={() => ShowUser(value)}>
+            <div key={index}>
+              <div className="person"  onClick={() => ShowUser(value)}>
                 <img src={value.picture} alt="dp" />
                 <h3>{value.name}</h3>
               </div>
               <hr style={{ color: "black", height: "5px", opacity: ".5" }} />
-            </>
+            </div>
           )
       )}
     </div>

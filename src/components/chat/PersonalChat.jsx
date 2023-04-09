@@ -117,27 +117,28 @@ function PersonalChat() {
           </p>
         </div>
         <span>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-solid fa-video"></i>
-          <i class="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-video"></i>
+          <i className="fa-solid fa-phone"></i>
         </span>
       </div>
 
       <div className="personal-Chat-box">
-        {oldMessages.map((value) => {
+        {oldMessages.map((value , index) => {
           return (
             <ChatMessage
               value={value}
               setOldMessages={setOldMessages}
               Id={Id}
+              key={index}
             />
           );
         })}
       </div>
 
       <div className="personal-box-footer">
-        <i class="fa-regular fa-face-smile"></i>
-        <i class="fa-solid fa-paperclip"></i>
+        <i className="fa-regular fa-face-smile"></i>
+        <i className="fa-solid fa-paperclip"></i>
         <input
           type="text"
           placeholder="Enter the text..."
@@ -145,7 +146,7 @@ function PersonalChat() {
           onChange={(e) => setMymessage(e.target.value)}
           onKeyPress={(e) => sendMessage(e)}
         />
-        <i class="fa-solid fa-microphone"></i>
+        <i className="fa-solid fa-microphone"></i>
       </div>
     </section>
   );

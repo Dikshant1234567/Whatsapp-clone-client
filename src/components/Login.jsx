@@ -18,7 +18,7 @@ function Login() {
 
   const SuccessHandler = async (resp) => {
     const decode = Jwt_decode(resp.credential);
-    // console.log(decode);
+    console.log(decode);
     setAccount(decode);
     await AddUser(decode);
   };
