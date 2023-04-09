@@ -313,7 +313,7 @@ background-color: rgba(128, 128, 128, 0.451);
   overflow-x: hidden;
 }
 .personal-box-footer {
-  padding: 8px 1rem;
+  padding: 0;
 }
 .personal-box-footer i {
   padding: 5px 10px;
@@ -321,7 +321,6 @@ background-color: rgba(128, 128, 128, 0.451);
   margin-left: 1rem;
 }
 .personal-box-footer i:last-child {
-
   margin-left: 2rem;
 }
 
@@ -329,12 +328,13 @@ background-color: rgba(128, 128, 128, 0.451);
   background-color: #41525d;
 }
 .personal-box-footer input {
-  width: 80%;
+  max-width: 90%;
+  min-width: 67%;
   background-color: whitesmoke;
   padding: 5px 10px;
   outline: none;
   border: 0;
-  margin: 0 ;
+  margin-left: 1rem ;
 }
 
 .chatbox-message {
